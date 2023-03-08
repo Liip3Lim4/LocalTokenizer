@@ -1,0 +1,21 @@
+{
+  "env": [
+    {
+      "envName": "dev",
+      "tokens": [
+        {
+          "tokenName": "___NAMESPACE___",
+          "value": "my-project"
+        },
+        {
+          "tokenName": "___ENVIRONMENT___",
+          "value": "dev"
+        },
+        {
+          "tokenName": "___REPLICAS___",
+          "value": "1"
+        }
+      ]
+    }
+  ]
+}
