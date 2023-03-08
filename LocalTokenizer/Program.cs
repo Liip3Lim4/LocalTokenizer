@@ -1,11 +1,5 @@
 ﻿using LocalTokenizer.CommandHandlers;
-using LocalTokenizer.Entities.Commands;
-using LocalTokenizer.Entities.Options;
-using System;
 using System.CommandLine;
-using System.IO;
-using System.Linq;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace LocalTokenizer;
@@ -18,7 +12,7 @@ public class Program
         // Initialize all options and UntokenizeFileCommand parameters
         _ = new UntokenizeFileCommandHandler(rootCommand);
 
-        //return await rootCommand.InvokeAsync("utk -sf teste.yaml -tf template.json -env dev -pb ind");
+        //return await rootCommand.InvokeAsync("utk -sf teste_original.yaml -tf template.json -env dev -pb ind");
         if (args.Length == 0)
         {
             return await rootCommand.InvokeAsync("--help");
